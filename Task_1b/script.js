@@ -7,7 +7,7 @@ const resetBtn = document.getElementById('resetBtn');
 const colorButton = document.getElementById('colorButton');
 const timeButton = document.getElementById('timeButton');
 
-let colorIndex = 0;
+let colorIndex = 2;
 const colors = ['white', 'purple', 'orange', 'green', 'yellow', 'transparent', '#be7dd8bf'];
 let hour;
 
