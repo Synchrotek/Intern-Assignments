@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #060F16FF; */
+}
+
+body {
+    background: linear-gradient(to bottom right,
+            #060F16FF, #f51313, #060F16FF);
+}
+
+.navbar * {
+    background-color: transparent;
+}
+
+.navbar {
+    background-color: #101A24FF;
+    padding: 1.3em 4em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.nav-content {
+    list-style: none;
+    display: flex;
+    gap: 3em;
+    color: inherit;
+}
+
+.nav-content a {
+    transition: all 0.4s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-content a:hover {
+    color: orange;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.content * {
+    font-size: 1.2rem;
+    color: #d6f8ff;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.content h1 {
+    color: #F69836FF;
+    font-size: 3em;
+}
+
+.car-image {
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    padding: 1.25rem;
+}
+
+.content hr {
+    height: 1px;
+    background-color: #F0925CFF;
+    margin: 2rem 18rem;
+    border: none;
+}
+
+.carAbout {
+    list-style: none;
+    margin: 1rem 6.5rem 3rem 6.5rem;
+    line-height: 2em;
+
+}
+
+.usAbout {
+    padding: 1em 12rem;
+    line-height: 2em;
+    text-align: center;
+    margin-top: 0.2em;
+    line-height: 2em;
+}
+
+#feedback h3,
+#about h2 {
+    font-size: 2rem;
+    color: #ffbf7c;
+}
+
+.feedbackForm {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.feedbackInput {
+    /* margin-left: 2em; */
+    padding: 1rem;
+    background-color: transparent;
+    color: #d6f8ff;
+    font-size: 1.3rem;
+    width: 60%;
+    border: 1px solid #d6f8ff;
+    border-radius: 0.3rem;
+}
+
+.feedbackSubmit {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: #d6f8ff;
+    background-color: #412415;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.feedbackSubmit:hover {
+    background-color: #903B27FF;
+}
