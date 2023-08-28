@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="has-background-black-ter">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cards using Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .my-heading {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .card {
+            position: relative;
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        .card-image {
+            position: relative;
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .card-image img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .card:hover .card-image {
+            opacity: 0.2;
+        }
+
+        .card:hover .card-content {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+
+                <!-- ``````````````````````````````````````````````````````` -->
+
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="./car01.jpg" alt="Background image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                                <p><i>
+                                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                                    </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------ -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="./car03.webp" alt="Background image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h2 class="title is-4 has-text-light">- Lamborghini Aventador -</h2>
+                                <p><i>
+                                        The Lamborghini Aventador is a legendary supercar that combines stunning design
+                                        with incredible performance. The Aventador can accelerate from 0 to 60 mph in
+                                        2.8 seconds and has a top speed of 217 mph.
+                                    </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------ -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="./car02.jpg" alt="Background image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h2 class="title is-4 has-text-light">- Lamborghini Huracán -</h2>
+                                <p><i>
+                                        It is a mid-engine, 2-seater sports car manufactured by Italian
+                                        automotive manufacturer Lamborghini. It is powered by a 5.2-liter V10 engine
+                                        that
+                                        produces 631 horsepower. The Huracán can accelerate from 0 to 60 mph in 2.9
+                                        seconds
+                                        and has a top speed of 202 mph.
+                                    </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------ -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="./car01.jpg" alt="Background image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                                <p><i>
+                                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                                    </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------ -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="./car01.jpg" alt="Background image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                                <p><i>
+                                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                                    </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------ -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="./car03.webp" alt="Background image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h2 class="title is-4 has-text-light">- Lamborghini Aventador -</h2>
+                                <p><i>
+                                        The Lamborghini Aventador is a legendary supercar that combines stunning design
+                                        with incredible performance. The Aventador can accelerate from 0 to 60 mph in
+                                        2.8 seconds and has a top speed of 217 mph.
+                                    </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ``````````````````````````````````````````````````````` -->
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
