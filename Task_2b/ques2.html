@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class=>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>carsCards</title>
+    <style>
+        #car-list-cards {
+            margin: 2rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 100vh;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .card {
+            width: calc(31% - 1px);
+            height: 40%;
+            position: relative;
+            margin-bottom: 1.5rem;
+            background-size: cover;
+            background-position: center center;
+            background-color: black;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .carList {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .card-content {
+            position: absolute;
+            inset: 0 0 0 0;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s;
+
+            font-size: 100%;
+        }
+
+        .card:hover .carList {
+            opacity: 0.6;
+        }
+
+        .card:hover .card-content {
+            color: white;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+
+    <section id="car-list-cards">
+
+        <!-- ``````````````````````````````````````````````````````` -->
+        <div class="card">
+            <img class="carList" src="./car01.jpg" alt="Background image">
+            <div class="card-content">
+                <h2>- McLaren 720S -</h2>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./car02.jpg" alt="Background image">
+            <div class="card-content">
+                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./car03.webp" alt="Background image">
+            <div class="card-content">
+                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./car02.jpg" alt="Background image">
+            <div class="card-content">
+                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./car03.webp" alt="Background image">
+            <div class="card-content">
+                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./car01.jpg" alt="Background image">
+            <div class="card-content">
+                <h2 class="title is-4 has-text-light">- McLaren 720S -</h2>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology. It can accelerate from 0 to 100 km/h
+                        (62 mph) in 2.9 seconds and has a top speed of 341 km/h (212 mph).
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+
+    </section>
+
+</body>
+
+</html>
