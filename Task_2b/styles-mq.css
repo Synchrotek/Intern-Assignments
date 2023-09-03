@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 750px) {
     .logo {
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     .navbar .menu-hamburger {
