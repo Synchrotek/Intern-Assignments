@@ -7,7 +7,7 @@
 
     .navbar .menu-hamburger {
         display: block;
-        margin-bottom: inherit;
+        margin-bottom: auto;
         margin: 0;
         margin-right: 1rem;
     }
