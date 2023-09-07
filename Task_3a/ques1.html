@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<link rel="stylesheet" href="./ques1.css">
+
+<body>
+
+    <div class="car-list-heading">
+        <h1>Image gallery</h1>
+        <hr>
+    </div>
+
+    <!-- ```````````````````````````````````````````` -->
+
+    <div id="car-list-cards">
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="img" src="./Assets/car01.jpg" alt="Background image">
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="img" src="./Assets/car02.jpg" alt="Background image">
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="img" src="./Assets/car03.webp" alt="Background image">
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="img" src="./Assets/car02.jpg" alt="Background image">
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="img" src="./Assets/car03.webp" alt="Background image">
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="img" src="./Assets/car01.jpg" alt="Background image">
+        </div>
+        <!-- ------------------------------------------------------ -->
+    </div>
+
+    <!-- ```````````````````````````````````````````` -->
+
+    <div class="overlay" id="image-overlay">
+        <span id="close-overlay"></span>
+        <img src="" alt="Enlarged Image" id="enlarged-image">
+    </div>
+
+    <!-- ```````````````````````````````````````````` -->
+
+    <script>
+        const images = document.querySelectorAll('.card img');
+        const overlay = document.getElementById('image-overlay');
+        const enlargedImage = document.getElementById('enlarged-image');
+        const closeoverlay = document.getElementById('close-overlay');
+        const carListCards = document.getElementById('car-list-cards');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                enlargedImage.src = image.getAttribute('src');
+                overlay.style.display = 'flex';
+
+                carListCards.classList.add('active');
+                setTimeout(() => {
+                    overlay.classList.add('active');
+                    enlargedImage.classList.add('active');
+                }, 10);
+            });
+        });
+
+        closeoverlay.addEventListener('click', () => {
+            carListCards.classList.remove('active');
+            overlay.classList.remove('active');
+            enlargedImage.classList.remove('active');
+
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 300);
+
+        });
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                carListCards.classList.remove('active');
+                overlay.classList.remove('active');
+                enlargedImage.classList.remove('active');
+
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 300);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
