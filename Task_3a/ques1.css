@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .car-list-heading h1 {
